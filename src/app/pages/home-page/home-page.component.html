@@ -1,1 +1,9 @@
-<app-recipe-card />
+<div class="pb-5">
+  <div class="flex justify-center flex-wrap gap-5">
+    @for(item of recipes; track 1){
+    <app-recipe-card />
+    } @empty{
+    <div>No Receipe Exist</div>
+    }
+  </div>
+</div>
